@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace RubikovaKostkaSimulace.Models
 {
-    internal class CubeColor
+    public enum CubeColor
     {
+        White,
+        Yellow,
+        Green,
+        Blue,
+        Orange,
+        Red
     }
 }
