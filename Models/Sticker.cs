@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace RubikovaKostkaSimulace.Models
 {
-    internal class Sticker
+    public class Sticker
     {
+        public CubeColor Color { get; set; }
+
+        public Sticker(CubeColor color)
+        {
+            Color = color;
+        }
     }
 }
