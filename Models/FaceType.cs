@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace RubikovaKostkaSimulace.Models
 {
-    internal class FaceType
+    public enum FaceType
     {
+        Up,
+        Down,
+        Front,
+        Back,
+        Left,
+        Right
     }
 }
