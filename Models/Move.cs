@@ -16,7 +16,7 @@ namespace RubikovaKostkaSimulace.Models
             Face = face;
             IsClockwise = isClockwise;
         }
-        
+
         public Move GetInverseMove()
         {
             return new Move(Face, !IsClockwise);
@@ -24,19 +24,33 @@ namespace RubikovaKostkaSimulace.Models
 
         public override string ToString()
         {
-            string prefix = Face switch
+            string prefix;
+            switch (Face)
             {
-                FaceType.Up => "U",
-                FaceType.Down => "D",
-                FaceType.Front => "F",
-                FaceType.Back => "B",
-                FaceType.Left => "L",
-                FaceType.Right => "R",
-                _ => "?"
-            };
+                case FaceType.Up:
+                    prefix = "U";
+                    break;
+                case FaceType.Down:
+                    prefix = "D";
+                    break;
+                case FaceType.Front:
+                    prefix = "F";
+                    break;
+                case FaceType.Back:
+                    prefix = "B";
+                    break;
+                case FaceType.Left:
+                    prefix = "L";
+                    break;
+                case FaceType.Right:
+                    prefix = "R";
+                    break;
+                default:
+                    prefix = "?";
+                    break;
+            }
 
             return IsClockwise ? prefix : prefix + "'";
         }
     }
-    
 }

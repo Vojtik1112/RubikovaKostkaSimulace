@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RubiksCubeSimulator.Models
+namespace RubikovaKostkaSimulace.Models
 {
-    
+
     public class Cube
     {
         public Dictionary<FaceType, Face> Faces { get; private set; }
@@ -18,7 +18,7 @@ namespace RubiksCubeSimulator.Models
             Reset();
         }
 
-        
+
         public void Reset()
         {
             Faces[FaceType.Up] = new Face(FaceType.Up, CubeColor.White);
@@ -177,3 +177,4 @@ namespace RubiksCubeSimulator.Models
             return true;
         }
     }
+}

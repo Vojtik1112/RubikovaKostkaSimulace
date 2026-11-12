@@ -52,9 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cube.cs" />
     <Compile Include="Models\CubeColor.cs" />
     <Compile Include="Models\Face.cs" />
     <Compile Include="Models\FaceType.cs" />
+    <Compile Include="Models\Move.cs" />
     <Compile Include="Models\Sticker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
