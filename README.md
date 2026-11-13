@@ -1,6 +1,6 @@
 Simulátor Rubikovy kostky (Maturitní práce)
 
-Aplikace pro simulaci skládání Rubikovy kostky 3×3×3 vytvořená v jazyce C# (.NET 10.0, Windows Forms).
+Aplikace pro simulaci skládání Rubikovy kostky 3×3×3 vytvořená v jazyce C# (.NET 8.1, Windows Forms).
 
 1. Datový model kostky (KB1)
 
